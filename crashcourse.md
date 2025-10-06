@@ -41,16 +41,11 @@ it (as we did) so that package dependencies are automatically pulled from there.
 
 Cross-Origin Resource Sharing (CORS)
 
-Original: Allow all origins for Cross-Origin Resource Sharing (CORS) Configure middleware to handle CORS, allowing requests 
-from any origin.
+Original: Allow all origins for Cross-Origin Resource Sharing (CORS) Configure middleware to handle CORS, allowing requests from any origin.
 
-Simplified: When you load a web app (e.g., from http://localhost:3000) and it tries to access a server (e.g., http://localhost:8000), 
-CORS controls whether the browser allows this connection. By default, browsers block requests from one 
-"origin" (like a domain or port) to another for security reasons.
+Simplified: When you load a web app (e.g., from http://localhost:3000) and it tries to access a server (e.g., http://localhost:8000), CORS controls whether the browser allows this connection. By default, browsers block requests from one "origin" (like a domain or port) to another for security reasons.
 
-In this code, allow_origins=["*"] is set, which means allow all origins (any domain or app can connect). The middleware 
-is added so that your FastAPI app accepts requests from any origin, making it easier for you to access the API from anywhere, 
-such as different frontend apps.
+In this code, allow_origins=["*"] is set, which means allow all origins (any domain or app can connect). The middleware is added so that your FastAPI app accepts requests from any origin, making it easier for you to access the API from anywhere, such as different frontend apps.
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
