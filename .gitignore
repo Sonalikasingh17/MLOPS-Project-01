@@ -210,3 +210,5 @@ __marimo__/
 
 artifacts/
 logs/
+.pkl
+.csv
